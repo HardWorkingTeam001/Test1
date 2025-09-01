@@ -24,3 +24,4 @@ In simple terms:
 * **GitHub** = the platform that lets you share and collaborate on that code with others online.
 
 Together, Git and GitHub form the backbone of modern software development, making teamwork, version tracking, and project management seamless and efficient.
+
