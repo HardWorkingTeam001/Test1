@@ -1,0 +1,60 @@
+3. Branching & Merging (Intermediate)
+
+🔑 Goal: Work on new features without breaking main code.
+
+Concepts to Learn:
+
+Branches (feature, bugfix, release).
+
+Merging & resolving conflicts.
+
+HTTPS vs SSH authentication.
+
+
+Fast-forward vs. no-fast-forward merges.
+
+
+Hands-on Commands:
+
+git branch feature-1       # create branch
+git checkout feature-1     # switch branch
+git merge feature-1        # merge into main
+git branch -d feature-1    # delete branch
+
+Practice Idea:
+Create two branches, make changes in both, and merge them back. Handle a merge conflict manually.
+
+
+
+---
+
+4. Collaboration with GitHub (Intermediate → Advanced)
+
+🔑 Goal: Work with a team on shared projects.
+
+Concepts to Learn:
+
+Forks & pull requests (PRs).
+
+GitHub Issues for bug tracking.
+
+GitHub Projects (Kanban board).
+
+Collaborators & permissions.
+
+
+Workflow Example (GitHub Flow):
+
+1. Fork or branch from main.
+
+
+2. Work on feature branch.
+
+
+3. Push to GitHub.
+
+
+4. Open a pull request.
+
+
+5. Review + merge.
