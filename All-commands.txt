@@ -1,0 +1,142 @@
+Absolutely! Git and GitHub have **a lot of commands**, and it’s best to break them down into categories for clarity. I’ll provide a **comprehensive list with explanations**.
+
+---
+
+## **1. Git Configuration Commands**
+
+These commands configure Git settings for your user and project.
+
+| Command                                            | Function                                      |
+| -------------------------------------------------- | --------------------------------------------- |
+| `git config --global user.name "Your Name"`        | Sets your name globally for Git commits.      |
+| `git config --global user.email "you@example.com"` | Sets your email globally for Git commits.     |
+| `git config --global core.editor "code --wait"`    | Sets default text editor for Git.             |
+| `git config --list`                                | Lists all current Git configuration settings. |
+| `git config --global --unset user.name`            | Removes the global user name setting.         |
+| `git config --global --unset user.email`           | Removes the global email setting.             |
+
+---
+
+## **2. Git Repository Commands**
+
+Commands to create or manage repositories.
+
+| Command                       | Function                                                    |
+| ----------------------------- | ----------------------------------------------------------- |
+| `git init`                    | Initializes a new Git repository in the current folder.     |
+| `git clone <url>`             | Clones an existing remote repository to your local machine. |
+| `git remote -v`               | Shows remote repositories associated with your project.     |
+| `git remote add origin <url>` | Adds a remote repository with name `origin`.                |
+| `git remote remove <name>`    | Removes a remote repository.                                |
+
+---
+
+## **3. Basic Git Workflow Commands**
+
+Commands for staging, committing, and checking repository status.
+
+| Command                      | Function                                                           |
+| ---------------------------- | ------------------------------------------------------------------ |
+| `git status`                 | Shows the current state of the working directory and staging area. |
+| `git add <file>`             | Stages a specific file for commit.                                 |
+| `git add .`                  | Stages all changes in the current directory for commit.            |
+| `git commit -m "message"`    | Commits staged changes with a descriptive message.                 |
+| `git commit -a -m "message"` | Stages all tracked files and commits them in one step.             |
+| `git diff`                   | Shows changes between working directory and staging area.          |
+| `git log`                    | Displays commit history.                                           |
+| `git log --oneline`          | Displays commit history in one line per commit.                    |
+
+---
+
+## **4. Branching and Merging**
+
+Commands to manage branches.
+
+| Command                         | Function                                              |
+| ------------------------------- | ----------------------------------------------------- |
+| `git branch`                    | Lists all branches in the repository.                 |
+| `git branch <branch-name>`      | Creates a new branch.                                 |
+| `git checkout <branch-name>`    | Switches to a specific branch.                        |
+| `git switch <branch-name>`      | Newer alternative to checkout for switching branches. |
+| `git checkout -b <branch-name>` | Creates and switches to a new branch.                 |
+| `git merge <branch-name>`       | Merges another branch into the current branch.        |
+| `git branch -d <branch-name>`   | Deletes a branch locally.                             |
+| `git branch -D <branch-name>`   | Force deletes a branch.                               |
+
+---
+
+## **5. Remote Repository Commands (GitHub)**
+
+Commands to interact with remote repositories.
+
+| Command                       | Function                                                           |
+| ----------------------------- | ------------------------------------------------------------------ |
+| `git push origin <branch>`    | Pushes your local branch to the remote repository.                 |
+| `git pull`                    | Fetches and merges changes from the remote repository.             |
+| `git fetch`                   | Fetches changes from remote without merging them.                  |
+| `git push -u origin <branch>` | Pushes branch and sets upstream tracking for easier future pushes. |
+| `git remote show origin`      | Shows information about the remote repository.                     |
+
+---
+
+## **6. Undoing Changes**
+
+Commands to fix mistakes.
+
+| Command                       | Function                                                              |
+| ----------------------------- | --------------------------------------------------------------------- |
+| `git restore <file>`          | Discards changes in the working directory.                            |
+| `git restore --staged <file>` | Unstages a staged file.                                               |
+| `git reset <commit>`          | Moves the HEAD to a previous commit, keeping changes staged.          |
+| `git reset --hard <commit>`   | Resets HEAD and working directory to a specific commit (destructive). |
+| `git revert <commit>`         | Creates a new commit that undoes changes from a previous commit.      |
+
+---
+
+## **7. Git Stashing**
+
+Temporarily saves changes without committing.
+
+| Command           | Function                                                                    |
+| ----------------- | --------------------------------------------------------------------------- |
+| `git stash`       | Stashes current changes.                                                    |
+| `git stash list`  | Lists all stashed changes.                                                  |
+| `git stash apply` | Applies the last stashed changes without removing them from the stash list. |
+| `git stash pop`   | Applies the last stash and removes it from the stash list.                  |
+
+---
+
+## **8. Git Tagging**
+
+Mark specific points in history as important.
+
+| Command                              | Function                                 |
+| ------------------------------------ | ---------------------------------------- |
+| `git tag`                            | Lists tags.                              |
+| `git tag <tag-name>`                 | Creates a new tag.                       |
+| `git tag -a <tag-name> -m "message"` | Creates an annotated tag with a message. |
+| `git push origin <tag-name>`         | Pushes a tag to remote repository.       |
+| `git push origin --tags`             | Pushes all tags to remote repository.    |
+
+---
+
+## **9. Git Inspection**
+
+Commands to examine repository history and changes.
+
+| Command                            | Function                                     |
+| ---------------------------------- | -------------------------------------------- |
+| `git show <commit>`                | Shows details of a specific commit.          |
+| `git log --graph --all --decorate` | Shows commit history as a graph.             |
+| `git blame <file>`                 | Shows who last modified each line in a file. |
+
+---
+
+## **10. GitHub-Specific Commands**
+
+While GitHub is primarily web-based, Git commands interact with GitHub.
+
+* `git remote add origin <url>` → Connects local repo to GitHub repo.
+* `git push` → Push commits to GitHub.
+* `git pull` → Pull changes from GitHub.
+* `git clone <repo-url>` → Clone a GitHub repositor
